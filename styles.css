@@ -77,3 +77,7 @@
 .move-around {
     animation: move 8s infinite;
 }
+/* Parent div svg-container */
+.svg-container {
+    perspective: 1000px;
+}
