@@ -32,3 +32,12 @@
 .move-around .inner-eye-group {
     animation: moveEyes 12s infinite;
 }
+
+@keyframes leftWhiskers {
+    
+}
+.move-around .left-whiskers {
+    animation: leftWhiskers 3s infinite;
+    transform-origin: 325px 350px;
+}
+
