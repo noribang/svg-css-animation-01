@@ -11,3 +11,7 @@
 .blue-eyes .eye-color {
     fill: #175282;
 }
+.sad .mouth {
+    transform: rotate(180deg) scale(0.5);
+    transform-origin: 340px 390px;
+}
