@@ -1,8 +1,7 @@
 let btns = document.querySelectorAll(".buttons button");
 let cat = document.getElementsByClassName("cat")[0];
-// console.log(btns);
-// console.log(cat);
 
+// Loop thru buttons to add event listener method.
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", manageCatClasses);
 }
