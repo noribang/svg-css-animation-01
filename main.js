@@ -8,5 +8,17 @@ for (let i = 0; i < btns.length; i++) {
 }
 
 function manageCatClasses() {
-    alert("testing 123!!!");
+    // Only if btn element has attribute data-add.
+    if (this.getAttribute("data-add")) {
+        // Add class name to svg element of the same value
+        // as btn element attribute data-add value. 
+        cat.classList.add(this.getAttribute("data-add"));
+    }
+    // Only if btn element has attribute data-remove.
+    if (this.getAttribute("data-remove")) {
+        // Remove class name of svg element of the same value
+        // as btn element attribute data-remove value. 
+        cat.classList.remove(this.getAttribute("data-remove"));
+    }
+    
 }
