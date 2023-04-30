@@ -8,6 +8,7 @@
     transform: scale(0.8);
 } */
 
+/* Eye color. */
 .blue-eyes .eye-color {
     fill: #175282;
 }
@@ -15,7 +16,7 @@
     transform: rotate(180deg) scale(0.5);
     transform-origin: 340px 390px;
 }
-
+/* Inner eye group. */
 @keyframes moveEyes {
     20% {
         transform: translate(-18px, -20px);
@@ -32,7 +33,7 @@
 .move-around .inner-eye-group {
     animation: moveEyes 12s infinite;
 }
-
+/* Left whiskers. */
 @keyframes leftWhiskers {
     20% {
         transform: rotate(5deg);
@@ -45,7 +46,7 @@
     animation: leftWhiskers 3s infinite;
     transform-origin: 325px 350px;
 }
-
+/* Righ whiskers. */
 @keyframes rightWhiskers {
     5% {
         transform: rotate(-2deg);
@@ -57,4 +58,13 @@
 .move-around .right-whiskers {
     animation: rightWhiskers 3s infinite;
     transform-origin: 325px 350px;
+}
+/* Entire head. */
+@keyframes move {
+    40% {
+        transform: rotateY(25deg);
+    }    
+}
+.move-around {
+    animation: move 8s infinite;
 }
