@@ -34,10 +34,27 @@
 }
 
 @keyframes leftWhiskers {
-    
+    20% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(-5deg);
+    }
 }
 .move-around .left-whiskers {
     animation: leftWhiskers 3s infinite;
     transform-origin: 325px 350px;
 }
 
+@keyframes rightWhiskers {
+    5% {
+        transform: rotate(-2deg);
+    }
+    90% {
+        transform: rotate(7deg);
+    }
+}
+.move-around .right-whiskers {
+    animation: rightWhiskers 3s infinite;
+    transform-origin: 325px 350px;
+}
