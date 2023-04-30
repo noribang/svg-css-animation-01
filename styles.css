@@ -61,9 +61,18 @@
 }
 /* Entire head. */
 @keyframes move {
-    40% {
-        transform: rotateY(25deg);
+    20% {
+        transform: rotateY(10deg) rotateX(10deg);
     }    
+    40% {
+        transform: rotateY(25deg) rotateX(10deg);
+    }
+    60% {
+        transform: rotateY(-10deg) rotateX(-10deg);
+    }
+    85% {
+        transform: rotateY(-10deg) rotateX(-16deg);
+    }
 }
 .move-around {
     animation: move 8s infinite;
